@@ -1,0 +1,52 @@
+text = input("Enter text :")
+print("------------- TEXT REPORT -------------")
+print(len(text))
+print(len(text.replace(" ","")))
+print(text.split())
+
+digits = 0
+alpha = 0
+for char in text:
+	if char.isdigit():
+		digits += 1
+
+print(digits)
+
+for char in  text:
+	if char.isalpha():
+		alpha += 1
+
+vowels = "aeiouAEIOU"
+vowels = [char for char in text if char in vowels]
+print(len(vowels))
+consonents = 0
+for char in text:
+	if char.isalpha() and char not in vowels:
+		consonents += 1
+
+
+spaces = 0
+for char in text:
+	if char.isspace():
+		spaces += 1
+
+print(spaces)
+
+special = 0
+for char in text:
+	if not char.isalnum() and not char.isspace():
+		special += 1
+print(special)
+
+
+print("------------- TEXT REPORT -------------")
+print("Characters          : ", len(text))
+print("Characters No Space : ", len(text.replace(" ", "")
+print("Words               : ", len(text.split())
+print("Vowels              : ", vowels)
+print("Consonants          : ", consonents)
+print("Digits              : ", digits)
+print("Special Characters  : ", special)
+print("Spaces              : 2:, spaces)
+----------------------------------------
+
